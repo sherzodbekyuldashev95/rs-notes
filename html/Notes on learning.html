@@ -5,31 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Maven Pro', sans-serif;
+        }
+        div{
+            width: 750px;
+            margin: 0 auto;
+        }
+
+        li{
+            font-size: 20px;
+        }
+
+        .heading{
+            color: red;
+        }
+
+        h2{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Notes while brushing up my mind on HTML</h1>
-    <h2>FreeCodeCamp's html course</h2>
-    <ul>
-        <li><i>Attributes</i>are special words inside opening tag of an element to control its behaviour</li>
-        <li>When you add a lower rank heading element to the page, it's implied that you are starting a new subsection</li>
-        <li>Find out what does self-contained element mean?</li>
-        <li><i>Label</i> element is used to help associate the text for an <code>input</code> element with and <code>input</code> element itself (especially for assistive technologies like screen readers)</li>
-        <li>Each <code>id</code> attribute's value must be unique from all other <code>id</code> values for the entire page</li>
-        <li><code>fieldset</code> element is used to group related inputs and labels together in a web form</li>
-        <li> <code>legend</code> acts as a caption for the content in <code>fieldset</code> element</li>
-    </ul>
-    <h2>MDN</h2>
-    <ul>
-        <li>Always include attribute quotes to avoid misinterpretation by a browser</li>
-        <li><i>Metadata</i> data about the HTML, such as the author, and important keywords that describe the document, links to
-        css etc.</li>
-        <li><code>&lt;meta UTF-8&gt;</code> specifies the character set that the document is permitted to use. utf-8 allows your page to display any language.</li>
-        <figure>
-            <img src="../img/bad-encoding.png" alt="" width="400" height="200">
-            <figcaption>when character encoding set to ISO-8859-1, for example (the character set for the Latin alphabet),</figcaption>
-        </figure>
-        <li>Many meta elements include <code>name</code> and <code>content</code> attributes. <code>name</code> specifies the type of meta element it is; what type of information it contains. <code>content</code> specifies the actual meta content </li>
-    
-    </ul>
+    <div>
+        <h1>Notes while brushing up my mind on HTML</h1>
+        <h2>FreeCodeCamp's html course</h2>
+        <ul>
+            <li><i>Attributes</i> are special words inside opening tag of an element to control its behaviour</li>
+            <li>When you add a lower rank heading element to the page, it's implied that you are starting a new subsection</li>
+            <li>Find out what does self-contained element mean?</li>
+            <li><code>Label</code> element is used to help associate the text for an <code>input</code> element with and <code>input</code> element itself (especially for assistive technologies like screen readers)</li>
+            <li>Each <code>id</code> attribute's value must be unique from all other <code>id</code> values for the entire page</li>
+            <li><code>fieldset</code> element is used to group related inputs and labels together in a web form</li>
+            <li> <code>legend</code> acts as a caption for the content in <code>fieldset</code> element</li>
+        </ul>
+        <h2>MDN</h2>
+        <ul>
+            <li>Always include attribute quotes to avoid misinterpretation by a browser</li>
+            <li><i>Metadata</i> data about the HTML, such as the author, and important keywords that describe the document, links to
+            css etc.</li>
+            <li><code>&lt;meta UTF-8&gt;</code> specifies the character set that the document is permitted to use. utf-8 allows your page to display any language.</li>
+            <figure>
+                <img src="../img/bad-encoding.png" alt="" width="400" height="200">
+                <figcaption>when character encoding set to ISO-8859-1, for example (the character set for the Latin alphabet),</figcaption>
+            </figure>
+            <li>Many meta elements include <code>name</code> and <code>content</code> attributes. <code>name</code> specifies the type of meta element it is; what type of information it contains. <code>content</code> specifies the actual meta content </li>
+            <li>there <u>three types of lists</u>:</li>
+                <ul>
+                    <li>Unordered - <code>ul</code></li>
+                    <li>Ordered - <code>ol</code></li>
+                    <li>Description - <code>dl</code></li>  
+                </ul>
+            <li><b>use right element for the right job</b></li>
+            <li class="heading">Non-semantic wrappers: <b>div</b> and <b>span</b>
+                <p>use them when you can't find an ideal semnatic element to group items together or wrap some content or <u>don't want add any specific meaning</u>. Or Sometimes you might want just group a set of elements together to affect them all as sigle entity with CSS or JS</p>
+            </li>
+        </ul>
+
+        <h2>Images</h2>
+        <ul>
+            <li><code>figure</code> and <code>figcaption</code> is created to provide a semantic container for figures and clearly link them with the caption. A figure could be several images, a code snippet, audio, video, equations, a table or somthing else</li>
+            <li> <b>Summary:</b> if an image has meaning in terms of your content you should use an html image. if an image is pure for <u>decoration</u> you should use CSS background images</li>
+            <li><code>iframe</code> element are designed to embed other web doc into the current web doc</li>
+            <li>Only embed when <b>necessary</b> as there may be security issues, intellectual property issues</li>
+            <li>On the web u will work with two types of images: <b>raster</b> <b>vector</b></li>
+        </ul>
+
+        <h2>Table</h2>
+        <ul>
+            <li><code>thead</code>,<code>tbody</code>, and<code>tfoot</code> are very useful for styling and layout</li>
+            <li>if you are using <code>col/colgroup</code> the table header must come just below those</li>
+        </ul>
+    </div>
 </body>
 </html>
